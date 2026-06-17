@@ -1,7 +1,7 @@
-# 美国北卡罗来纳州（NC）驾照笔试中文题库 · 在线刷题网页
+# North Carolina (NC) DMV Driver License Knowledge Test — Chinese Practice (140 Q&A) 🚗
 
-> **North Carolina (NC) DMV Driver License Knowledge Test — Chinese Practice (140 Q&A)**
-> 美国北卡州驾照笔试 / 路考理论 · 140 道中文考题 · 清晰示意图 · 逐题详细解析 · 测验循环 · 错题本 · 进度追踪
+> **美国北卡罗来纳州（NC）驾照笔试中文题库 · 在线刷题网页**
+> 140 道中文考题 · 逐题详细解析 · 测验循环 · 错题本 · 进度追踪 · 交通标志图解　｜　NC driver license / learner's permit written (knowledge) test, Chinese practice, 140 Q&A
 
 [![在线做题](https://img.shields.io/badge/▶️_在线做题-点开即用-brightgreen?style=for-the-badge)](https://yuki4266.github.io/north-carolina-nc-dmv-driver-license-chinese-practice-test-140-questions/)
 [![题量](https://img.shields.io/badge/题量-140_题-blue?style=flat-square)](#)
