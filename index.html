@@ -650,7 +650,14 @@ signsBox.querySelectorAll('.signfig img').forEach(img=>img.addEventListener('cli
   {n:'靠右行驶 KEEP RIGHT',s:reg([['KEEP',12],['RIGHT',13],['→',20]]),d:'遇分流岛/障碍物时须从右侧绕过。'},
   {n:'禁止自行车',s:circP(T('🚲',38),true),d:'此路段禁止自行车通行。'},
   {n:'左车道必须左转',s:reg([['LEFT LANE',9],['MUST',10],['↰',20]]),d:'处在此车道就必须左转，不能直行。'},
-  {n:'残疾人专用',s:gtext('♿','#1565c0',40),d:'蓝牌轮椅=残疾人专用车位，无证停放会被罚。'}
+  {n:'残疾人专用',s:gtext('♿','#1565c0',40),d:'蓝牌轮椅=残疾人专用车位，无证停放会被罚。'},
+  {n:'只能左转 LEFT TURN ONLY',s:reg([['↰',26],['ONLY',12]]),d:'白牌=该车道<b>只能左转</b>，不能直行或右转。'},
+  {n:'直行或左转 THRU & LEFT',s:reg([['↑ ↰',20],['THRU & LEFT',8]]),d:'该车道<b>可直行也可左转</b>。'},
+  {n:'小心超车 PASS WITH CARE',s:reg([['PASS',13],['WITH',12],['CARE',12]]),d:'此处<b>允许超车但要小心</b>（与"DO NOT PASS 禁止超车"相对）。'},
+  {n:'慢车靠右',s:reg([['SLOWER',10],['TRAFFIC',9],['KEEP',10],['RIGHT',10]]),d:'开得慢就靠右行驶，把左侧快车道让给快车。'},
+  {n:'公交车站 BUS STOP',s:reg([['BUS',15],['STOP',14]]),d:'公交停靠站，注意进出站的巴士与上下车乘客。'},
+  {n:'靠左行驶 KEEP LEFT',s:reg([['KEEP',12],['LEFT',13],['←',20]]),d:'遇分流岛/障碍物时须从<b>左侧</b>绕过。'},
+  {n:'应急停车带',s:reg([['EMER-',11],['GENCY',11],['PARKING',9]]),d:'仅供紧急情况临时停靠，平时不得停。'}
  ]},
  {cat:'B. 警告标志（黄色菱形 · 前方有危险，减速小心）',items:[
   {n:'十字路口 CROSS ROAD',s:dia(T('✚',46,52,'#111')),d:'前方为交叉路口，注意横向来车。'},
@@ -671,7 +678,13 @@ signsBox.querySelectorAll('.signfig img').forEach(img=>img.addEventListener('cli
   {n:'陡坡 HILL',s:dia(T('🚛',32)),d:'前方长下坡，挂低档用发动机制动（第28题）。'},
   {n:'限高 LOW CLEARANCE',s:dia(T('12′6″',17,52,'#111')),d:'前方净空高度有限，超高车辆勿入（图示约 12 英尺 6 寸）。'},
   {n:'前方道路分隔',s:dia(T('⬆⬆',22,52,'#111')),d:'前方出现中央隔离带，靠右行驶。'},
-  {n:'分隔结束',s:dia(T('⬆',24,52,'#111')),d:'中央隔离带结束，恢复双向，注意对向来车。'}
+  {n:'分隔结束',s:dia(T('⬆',24,52,'#111')),d:'中央隔离带结束，恢复双向，注意对向来车。'},
+  {n:'急转弯（直角）',s:arrowDia('M42 74 V50 H66 M66 50 L59 44 M66 50 L59 56'),d:'前方近 90° 的<b>急弯</b>，比普通弯道更要大幅减速。'},
+  {n:'添加车道 ADDED LANE',s:arrowDia('M40 78 V40 M62 80 V54 Q62 42 80 40'),d:'旁边<b>新增</b>一条车道汇入，你<b>无需</b>变道或让行（区别于"车道合并"）。'},
+  {n:'前方让行 YIELD AHEAD',s:dia('<polygon points="35,38 65,38 50,63" fill="#fff" stroke="#d8261c" stroke-width="5"/>'),d:'提示前方有 YIELD 让行标志，提前准备减速让行。'},
+  {n:'软路肩 SOFT SHOULDER',s:dia(T('软路肩',13,52,'#111')),d:'路肩松软，不要驶上，否则易陷车/失控（见第 69 题"路肩"）。'},
+  {n:'道路变窄 ROAD NARROWS',s:arrowDia('M32 30 Q50 52 50 80 M68 30 Q50 52 50 80'),d:'前方路面变窄，注意车距、谨慎并线。'},
+  {n:'路面湿滑/结冰',s:dia(T('❄',34,52,'#1565c0')),d:'前方桥面/路面可能结冰打滑（桥面比路面更易结冰），减速。'}
  ]},
  {cat:'C. 铁路道口',items:[
   {n:'铁路预告（圆牌）',s:rrAdv(),d:'<b>圆形</b>黄牌 RXR=前方有火车道口的<b>提前警告</b>。注意：它是圆牌不是菱形（第76题）。'},
@@ -696,6 +709,12 @@ signsBox.querySelectorAll('.signfig img').forEach(img=>img.addEventListener('cli
   {n:'绿箭头',s:light([],'<text x="50" y="50" font-size="30" text-anchor="middle" dominant-baseline="central" fill="#34c759" font-weight="900">↑</text>'),d:'箭头方向受保护通行（如专用左转）；红灯+绿箭头时只可走箭头方向（第130题）。'},
   {n:'红色闪灯',s:light(['r']),d:'当作 STOP 停车牌：<b>每次都完全停车</b>，安全后再走（第74题）。'},
   {n:'黄色闪灯',s:light(['y']),d:'警示：减速、提高警惕、小心通过，不必停车（第75题）。'}
+ ]},
+ {cat:'G. 其他速查（原版第 1 页还含）',items:[
+  {n:'大卡车盲区 NO-ZONE',s:wrap('<rect x="10" y="36" width="52" height="26" rx="3" fill="#d8261c"/><rect x="66" y="42" width="22" height="16" rx="2" fill="#555"/><text x="36" y="50" font-size="9" text-anchor="middle" dominant-baseline="central" fill="#fff" font-weight="800" font-family="Arial">NO-ZONE</text>'),d:'大货车四周有大片盲区——<b>你看不到它的后视镜，它就看不到你</b>。别长时间逗留在卡车两侧、正后方和正前方，超车要快进快出。'},
+  {n:'血液酒精量对照表',s:wrap('<rect x="12" y="10" width="76" height="80" rx="5" fill="#fff" stroke="#111" stroke-width="3"/><line x1="12" y1="30" x2="88" y2="30" stroke="#111" stroke-width="2"/><line x1="12" y1="50" x2="88" y2="50" stroke="#111" stroke-width="2"/><line x1="12" y1="70" x2="88" y2="70" stroke="#111" stroke-width="2"/><line x1="46" y1="10" x2="46" y2="90" stroke="#111" stroke-width="2"/><text x="62" y="40" font-size="12" text-anchor="middle" fill="#d8261c" font-weight="800" font-family="Arial">0.08</text>'),d:'原版第 1 页的酒精量对照表：体重越轻、喝得越多，血液酒精(BAC)越高。关键线 <b>0.08% = 法定醉驾</b>、0.05% 已受损（详见第 110 题）。'},
+  {n:'记点 / 罚则表',s:wrap('<rect x="12" y="10" width="76" height="80" rx="5" fill="#fff" stroke="#111" stroke-width="3"/><line x1="12" y1="34" x2="88" y2="34" stroke="#111" stroke-width="2"/><line x1="12" y1="58" x2="88" y2="58" stroke="#111" stroke-width="2"/><line x1="58" y1="10" x2="58" y2="90" stroke="#111" stroke-width="2"/><text x="35" y="74" font-size="18" text-anchor="middle" fill="#111" font-weight="800" font-family="Arial">5</text><text x="73" y="74" font-size="9" text-anchor="middle" fill="#111" font-family="Arial">分</text>'),d:'各类违章对应的记点分值表：超越下客校车 5 分最高；3 年累计 7 分上课、12 分吊照（详见第 3/4/5 题）。'},
+  {n:'三车转弯规则',s:wrap('<rect x="6" y="44" width="88" height="12" fill="#aab4c2"/><rect x="44" y="6" width="12" height="88" fill="#aab4c2"/><rect x="20" y="46" width="16" height="8" rx="2" fill="#16a34a"/><rect x="46" y="20" width="8" height="16" rx="2" fill="#3b82f6"/><rect x="62" y="46" width="16" height="8" rx="2" fill="#f59e0b"/>'),d:'原版第 1 页的路口转弯示意：转弯进最近车道、左转让对向直行、无控制路口先到先行/让右（详见第 29/40/41/127 题）。'}
  ]}
  ];
 
