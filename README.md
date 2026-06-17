@@ -1,7 +1,7 @@
-# North Carolina (NC) DMV Driver License Knowledge Test — Chinese Practice (140 Q&A) 🚗
+# 美国北卡罗来纳州（NC）驾照笔试中文题库 · 在线刷题网页 🚗
 
-> **美国北卡罗来纳州（NC）驾照笔试中文题库 · 在线刷题网页**
-> 140 道中文考题 · 逐题详细解析 · 测验循环 · 错题本 · 进度追踪 · 交通标志图解　｜　NC driver license / learner's permit written (knowledge) test, Chinese practice, 140 Q&A
+> **North Carolina (NC) DMV Driver License Knowledge Test — Chinese Practice (140 Q&A)**
+> 140 道中文考题 · 逐题详细解析 · 测验循环 · 错题本 · 进度追踪 · 交通标志图解　｜　NC driver license / learner's permit written (knowledge) test, Chinese practice
 
 [![在线做题](https://img.shields.io/badge/▶️_在线做题-点开即用-brightgreen?style=for-the-badge)](https://yuki4266.github.io/north-carolina-nc-dmv-driver-license-chinese-practice-test-140-questions/)
 [![题量](https://img.shields.io/badge/题量-140_题-blue?style=flat-square)](#)
@@ -49,30 +49,15 @@
 
 ## 🖼️ 界面预览
 
-进入网页后，顶部有 4 个模式按钮 + 一条**置顶进度条**，往下滚都跟随显示：
+| 做题界面 · 点选项即时判对错 + 详细解析 | 单题详解 · 原版示意图 + 逐项解析 |
+|:---:|:---:|
+| ![做题界面](./screenshots/01-home.png) | ![单题详解](./screenshots/02-question.png) |
+| **测验成绩单 · 自动揪出你最易错的考点** | **交通标志图解 · 清晰矢量版** |
+| ![测验结果](./screenshots/03-result.png) | ![标志图解](./screenshots/04-signs.png) |
+| **考点总结 · 17 类速记清单** | **手机端 · 响应式自适应** |
+| ![考点总结](./screenshots/05-summary.png) | ![手机端](./screenshots/06-mobile.png) |
 
-```
-┌──────────────────────────────────────────────┐
-│  📖 全部题目   📚 考点总结   🚦 标志图解         │
-│  📝 测验/刷题   📕 错题本 (n)                    │
-│  ▓▓▓▓▓▓▓▓░░░░░░  已完成 86 / 140 题 · 61%       │
-└──────────────────────────────────────────────┘
-
-  第 41 题  [路权]
-  如图中所示，先行权属于…
-  ┌─ 原版示意图 ─┐
-  │  🚗 1 号车…  │
-  └──────────────┘
-  ( A ) 1 号车驾驶者
-  ( B ) 2 号车驾驶者
-  ( C ) 只属于行人
-  ( D ) 属于 1 号车和行人      ← 点选项立刻判对错
-  ▸ 查看答案与解析
-  ✅ 正确答案：D
-  「左转让直行、所有车让行人」…（详细解析）
-```
-
-> 想看真实效果？直接打开上面的 **在线做题** 链接，比截图更直观。
+> 截图仅为示意，**想看真实效果直接打开上面的 [在线做题](#️-在线做题点开即用) 链接**，比截图更直观。
 
 ---
 
